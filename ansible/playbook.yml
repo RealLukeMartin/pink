@@ -15,6 +15,7 @@
   gather_facts: True
   vars_files:
     - vars/secret
+    - vars/kvm-hosts.yml
   vars:
     common_sidecar: false
     common_node_exporter: false
