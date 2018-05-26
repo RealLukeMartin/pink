@@ -18,10 +18,10 @@ Upgrade pip and install virtualenv
 `pip3 install --upgrade pip virtualenv`
 
 Create the virtualenv
-`virtualenv ~/.vens/pink`
+`virtualenv ~/.venv/pink`
 
 Activate the virtualenv
-`source ~/.vens/pink/bin/activate`
+`source ~/.venv/pink/bin/activate`
 
 Install project dependencies
 `pipenv install`
