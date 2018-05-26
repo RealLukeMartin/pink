@@ -1,0 +1,8 @@
+---
+- name: Run Test
+  hosts: kvm-hosts
+  user: luke
+  tasks:
+  - shell: echo 'test'
+    register: foo
+  - debug: msg="the echo was {{ foo.stdout }}"
