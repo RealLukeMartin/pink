@@ -6,3 +6,20 @@
   - shell: echo 'test'
     register: foo
   - debug: msg="the echo was {{ foo.stdout }}"
+
+- name: Set up kvm hosts
+  hosts: kvm-hosts
+  become: true
+  become_user: root
+  remote_user: luke
+  gather_facts: True
+  vars_files:
+    - vars/secret
+  vars:
+    common_sidecar: false
+    common_node_exporter: false
+    common_security: true
+    common_docker: false
+  roles:
+    - common
+    - kvm/hosts
