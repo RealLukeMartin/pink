@@ -18,10 +18,10 @@ Upgrade pip and install virtualenv
 `pip3 install --upgrade pip virtualenv`
 
 Create the virtualenv
-`virtualenv ~/.local/share/virtualenvs/kvm-host`
+`virtualenv ~/.vens/pink`
 
 Activate the virtualenv
-`source ~/.venv/kvm-host/bin/activate`
+`source ~/.vens/pink/bin/activate`
 
 Install project dependencies
 `pipenv install`
