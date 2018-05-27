@@ -16,6 +16,7 @@
   vars_files:
     - vars/secret
     - vars/kvm-hosts.yml
+    - vars/docker.yml
   vars:
     common_sidecar: false
     common_node_exporter: false
@@ -24,3 +25,4 @@
   roles:
     - common
     - kvm/hosts
+    - docker
