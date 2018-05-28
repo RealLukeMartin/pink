@@ -25,4 +25,5 @@
   roles:
     - common
     - kvm/hosts
+    - kvm/guest
     - docker
